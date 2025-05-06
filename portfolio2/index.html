@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<title>Clyde - Free Bootstrap 4 Template by Colorlib</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+		integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+	<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script>
+		// Disable right-click (global + images)
+		document.addEventListener('contextmenu', function (e) {
+		  if (e.target.tagName === 'IMG') {
+			// alert('Right-click on images is disabled.');
+		  } else {
+			// alert('Right click is disabled on this page.');/
+		  }
+		  e.preventDefault();
+		});
+	  
+		// Disable F12 and Ctrl+U
+		document.addEventListener('keydown', function (e) {
+		  const key = e.key.toLowerCase();
+		  if ((e.ctrlKey && key === 'u') || key === 'f12') {
+			e.preventDefault();
+			if (key === 'u') {
+			//   alert('View Source is disabled on this page.');
+			} else if (key === 'f12') {
+			//   alert('Inspect Element is disabled on this page.');
+			}
+		  }
+		});
+	  </script>
+
+	<style>
+		.video-description .desc-item {
+			transition: all 0.3s ease;
+		}
+	</style>
+</head>
+
+<style>
+	.bg-dark{
+		background-color: transparent !important;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: 'Arial', sans-serif;
+		background-color: #f9e9e6;
+	}
+
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.col-md-3 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.logo-card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 210px;
+		padding: 20px;
+		border-radius: 0;
+		transition: background-color 0.3s ease;
+		position: relative;
+		margin: 0;
+		/* Ensures no gap between cards */
+	}
+
+	.logo-card.light {
+		background-color: #f9e9e6;
+		color: #4A060D;
+	}
+
+	.logo-card.dark {
+		background-color: rgba(255, 255, 255, 0.281);
+		color: #4A060D;
+		/* color: white; */
+	}
+
+	/* Hover effect for odd cards */
+	.logo-card.light:hover {
+		background-color: #c86358;
+		/* Red color for odd cards */
+		color: white;
+	}
+
+	/* Hover effect for even cards */
+	.logo-card.dark:hover {
+		background-color: #4A060D;
+		/* Green color for even cards */
+		color: white;
+	}
+
+	.hover-text {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: inherit;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		pointer-events: none;
+	}
+
+	.logo-card:hover .hover-text {
+		opacity: 1;
+	}
+
+	.hover-heading {
+		font-size: 24px;
+		font-weight: bold;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.hover-description {
+		font-size: 14px;
+		text-align: center;
+		line-height: 1.4;
+	}
+
+	.logo-content {
+		max-width: 200px;
+		text-align: center;
+	}
+
+	.logo-text {
+		/* font-weight: bold; */
+		margin-bottom: 10px;
+		font-size: 24px;
+	}
+
+	.danshur {
+		font-size: 28px;
+		color: #5e0000;
+	}
+
+	.aumn {
+		font-size: 28px;
+	}
+
+	.aumn-description {
+		font-size: 14px;
+		margin-top: 10px;
+		line-height: 1.4;
+	}
+
+	.arrow {
+		margin-top: 20px;
+		font-size: 24px;
+	}
+
+	.muw {
+		font-size: 24px;
+		color: #5e0000;
+		font-style: italic;
+	}
+
+	.muw-dot {
+		color: #5e0000;
+	}
+
+	.hive {
+		font-size: 24px;
+		color: #5e0000;
+		display: flex;
+		align-items: center;
+	}
+
+	.hive-icon {
+		color: #ff5a5a;
+		font-size: 28px;
+		margin-right: 8px;
+	}
+
+	.validus {
+		font-size: 24px;
+		color: #5e0000;
+		display: flex;
+		align-items: center;
+	}
+
+	.validus-icon {
+		color: #5e0000;
+		margin-right: 10px;
+		font-size: 28px;
+	}
+
+	.foundant {
+		font-size: 20px;
+		color: #5e0000;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	.foundant-dot {
+		color: #ff5a5a;
+	}
+
+	.ministry {
+		font-size: 18px;
+		color: #5e0000;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	.ministry-icon {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+
+	.circle {
+		height: 14px;
+		width: 14px;
+		background-color: #ff5a5a;
+		border-radius: 50%;
+		margin: 0 2px;
+	}
+
+	.circle.light {
+		opacity: 0.7;
+	}
+
+	.penguin {
+		font-size: 18px;
+		color: #5e0000;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	.penguin-icon {
+		font-size: 32px;
+		color: #5e0000;
+		margin-bottom: 10px;
+	}
+</style>
+<style>
+	.img-wrapper {
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+		border-radius: 8px;
+	}
+
+	.img-wrapper img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s;
+	}
+
+	.img-wrapper:hover img {
+		transform: scale(1.05);
+	}
+
+	.more-image {
+		display: none;
+	}
+</style>
+
+
+
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	<nav style="background-color: white;" class="navbar navbar-expand-lg  ftco_navbar  ftco-navbar-light site-navbar-target"
+		id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Clyde<span>.</span></a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container-fluid px-md-0">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third order-md-last img" style="background-image:url(images/bg_11.jpg);">
+							<div class="overlay"></div>
+							<div class="overlay-1"></div>
+						</div>
+						<div class="one-forth d-flex align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello! This is Pallav Kaishorya</span>
+								<h1 class="mb-4 mt-3">Executive Producer <span>OTT & Films</span></h1>
+								<p>
+									<a href="#" class="btn btn-primary">Hire me</a>
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-counter img bg-light" id="section-counter">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-video-camera"></span>
+						</div>
+						<div class="text">
+							<strong class="number" data-number="35">0</strong>
+							<span>Movies Produced</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-promotion"></span>
+						</div>
+						<div class="text">
+							<strong class="number" data-number="50">0</strong>
+							<span>Ads Created</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-music"></span>
+						</div>
+						<div class="text">
+							<strong class="number" data-number="70">0</strong>
+							<span>YouTube Music Videos</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-meeting"></span>
+						</div>
+						<div class="text">
+							<strong class="number" data-number="40">0</strong>
+							<span>Corporate Events</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex no-gutters">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/about-123.png);">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
+					<div class="py-md-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								<span class="subheading">My Intro</span>
+								<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
+								<p>I am Pallav Kaishorya, an Executive Producer with over 15 years of experience in OTT,
+									films, and international reality TV. Having worked with renowned names like Yash Raj
+									Films, Gemini Films, and Eccholine Belgium, I specialize in handling large-scale
+									global productions and delivering world-class content. My expertise spans production
+									management, line production, and creative execution across diverse formats and
+									audiences.</p>
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Name:</span> <span>Pallav Kaishorya</span></li>
+									<li class="d-flex"><span>Date of birth:</span> <span>May 12, 1985</span></li>
+									<li class="d-flex"><span>Address:</span> <span>Mumbai, Maharashtra, India</span>
+									</li>
+									<li class="d-flex"><span>Zip code:</span> <span>400001</span></li>
+									<li class="d-flex"><span>Email:</span> <span>pallav.kaishorya@example.com</span>
+									</li>
+									<li class="d-flex"><span>Phone: </span> <span>+91-9876543210</span></li>
+								</ul>
+							</div>
+							<div class="col-md-12">
+								<div class="my-interest d-lg-flex w-100">
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="flaticon-video-player"></span>
+										</div>
+										<div class="text">Filmmaking</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="flaticon-suitcases"></span>
+										</div>
+										<div class="text">Travel</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="flaticon-chat"></span>
+										</div>
+										<div class="text">Networking</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="flaticon-reading"></span>
+										</div>
+										<div class="text">Storytelling</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<section class="ftco-section bg-light py-5" id="services-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-8 text-center">
+					<span class=" font-weight-bold text-uppercase mb-3 d-block"style="color: #b1b493;">Our Expertise</span>
+					<h2 class="mb-4 font-weight-bold">Creative Services We Offer</h2>
+					<p class="text-muted">We specialize in visual storytelling, powerful branding, and immersive event
+						experiences across digital and physical platforms.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Service 1 -->
+				<div class="col-md-6 col-lg-3 mb-4">
+					<div class="card border-0 h-100 transition-hover">
+						<div class="card-body p-4">
+							<div
+								class="icon-box mb-4  text-black rounded-circle d-flex align-items-center justify-content-center"style="background-color: #b1b493;">
+								<i class="ri-film-fill"></i>
+							</div>
+							<h4 class="h5 mb-3">Movie Production</h4>
+							<p class="text-muted mb-0">End-to-end film production, from scripting and casting to
+								shooting and post-production.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Service 2 -->
+				<div class="col-md-6 col-lg-3 mb-4">
+					<div class="card border-0 h-100 transition-hover">
+						<div class="card-body p-4">
+							<div
+								class="icon-box mb-4  text-black rounded-circle d-flex align-items-center justify-content-center"style="background-color: #b1b493;">
+								<i class="ri-megaphone-line"></i>
+							</div>
+							<h4 class="h5 mb-3">Ad Film Making</h4>
+							<p class="text-muted mb-0">Creating compelling and high-impact commercials tailored to your
+								brand's message and audience.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Service 3 -->
+				<div class="col-md-6 col-lg-3 mb-4">
+					<div class="card border-0 h-100 transition-hover">
+						<div class="card-body p-4">
+							<div
+								class="icon-box mb-4 text-black rounded-circle d-flex align-items-center justify-content-center"style="background-color: #b1b493;">
+								<i class="ri-folder-music-fill"></i>
+							</div>
+							<h4 class="h5 mb-3">YouTube Music Videos</h4>
+							<p class="text-muted mb-0">Producing high-quality music videos for YouTube, combining
+								visuals, storytelling, and sound design.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Service 4 -->
+				<div class="col-md-6 col-lg-3 mb-4">
+					<div class="card border-0 h-100 transition-hover">
+						<div class="card-body p-4">
+							<div
+								class="icon-box mb-4  text-black rounded-circle d-flex align-items-center justify-content-center"style="background-color: #b1b493;">
+								<i class="ri-briefcase-2-line"></i>
+							</div>
+							<h4 class="h5 mb-3">Corporate Event Coverage</h4>
+							<p class="text-muted mb-0">Professional planning, filming, and editing for corporate events,
+								conferences, and brand launches.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Optional: Add more services if needed -->
+			</div>
+		</div>
+
+		<style>
+			.icon-box {
+				width: 70px;
+				height: 70px;
+				transition: all 0.3s ease;
+			}
+
+			.icon-box i {
+				font-size: 2vw;
+			}
+
+			.transition-hover {
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+
+			.transition-hover:hover {
+				transform: translateY(-10px);
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+			}
+
+			.card {
+				border-radius: 8px;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+			}
+		</style>
+	</section>
+
+
+	<section class="ftco-hireme">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-md-8 col-lg-8 d-flex align-items-center">
+					<div class="w-100 py-4">
+						<h2>Have a project in mind?</h2>
+						<p>I'm Pallav Kaishorya — an Executive Producer with expertise in OTT, Films & Reality TV.
+							Whether you're launching a new show, film, or digital campaign, I can help bring your vision
+							to life with creative direction and production excellence.</p>
+						<p class="mb-0"><a href="#contact-section" class="btn btn-white py-3 px-4">Contact Me</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4 d-flex align-items-end">
+					<img src="images/author2.png" class="img-fluid" alt="Pallav Kaishorya" >	
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section ftco-project" id="projects-section">
+		<div class="container-fluid px-md-4">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Accomplishments</span>
+					<h2 class="mb-4">Our Projects</h2>
+					<p>Explore some of the standout productions led by Pallav Kaishorya across OTT platforms, films, and
+						reality television.</p>
+				</div>
+			</div>
+			<div class="row g-0">
+				<!-- First Row (4 Cards) -->
+				<div class="col-md-3">
+					<div class="logo-card light">
+						<div class="logo-content">
+							<div class="logo-text race3">Race 3</div>
+							<!-- <div class="race3-description">A high-octane Bollywood action thriller known for its stylish visuals and intense drama.</div> -->
+						</div>
+						<div class="hover-text">
+							<div class="hover-heading">Race 3</div>
+							<div class="hover-description">
+								An adrenaline-fueled cinematic experience featuring a star-studded cast and dynamic
+								storytelling. Key creative and production input by <strong>Pallav Kaishorya</strong>.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="logo-card dark">
+						<div class="logo-content">
+							<div class="logo-text mom">Mom</div>
+							<!-- <div class="mom-description">A mystical web series blending spirituality with modern-day thrills.</div> -->
+							<div class="arrow">→</div>
+						</div>
+						<div class="hover-text">
+							<div class="hover-heading">Mom</div>
+							<div class="hover-description">
+								An award-winning digital series that explores consciousness and human evolution through
+								a compelling and thought-provoking narrative. Creative support by <strong>Pallav
+									Kaishorya</strong>.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="logo-card light">
+						<div class="logo-content">
+							<div class="logo-text muw">Student of the Year 2</span></div>
+						</div>
+						<div class="hover-text">
+							<div class="hover-heading">Student of the Year 2</div>
+							<div class="hover-description">
+								A vibrant youth-centric Bollywood film packed with dance, drama, and competition.
+								<strong>Pallav Kaishorya</strong> contributed to key aspects of creative direction and
+								on-set coordination.
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-3">
+					<div class="logo-card dark">
+						<div class="logo-content">
+							<div class="validus">
+								<span class="validus-icon">✓</span>
+								Validus
+							</div>
+						</div>
+						<div class="hover-text">
+							<div class="hover-heading">Validus</div>
+							<div class="hover-description">An action-packed film co-produced with international studios,
+								known for its high-octane visuals and strong characters.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row g-0">
+				<!-- Second Row (Next 4 Cards) -->
+				<div class="col-md-3">
+					<div class="logo-card dark">
+						<div class="logo-content">
+							<div class="foundant">
+								FOUNDANT<br>FACTORY<span class="foundant-dot">.</span>
+							</div>
+						</div>
+						<div class="hover-text">
+							<div class="hover-heading">Foundant Factory</div>
+							<div class="hover-description">A creative studio initiative producing original short films,
+								digital content, and branded entertainment.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="logo-card light">
+						<div class="logo-content">
+							<div class="ministry-icon">
+								<div class="circle"></div>
+								<div class="circle light"></div>
+								<div class="circle light"></div>
+							</div>
+							<div class="ministry">
+								Ministry<br>of Motion
+							</div>
+						</div>
+						<div class="hover-text">
+							<div class="hover-heading">Ministry of Motion</div>
+							<div class="hover-description">A content division spearheading experimental storytelling
+								formats for digital-first audiences.</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="logo-card dark">
+						<div class="logo-content">
+							<div class="penguin-icon">🐧</div>
+							<div class="penguin">
+								PENGUIN<br>LOOKS
+							</div>
+						</div>
+						<div class="hover-text">
+							<div class="hover-heading">Penguin Looks</div>
+							<div class="hover-description">A fashion-based reality series that combines visual flair
+								with celebrity storytelling.</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-md-3">
+					<div class="logo-card dark">
+						Empty card
+					</div>
+				</div> -->
+				<!-- <div class="col-md-3">
+					<div class="logo-card light">
+						Empty card
+					</div>
+				</div> -->
+			</div>
+
+			<div class="row">
+				<!-- Third Row (Next Cards) -->
+				<!-- <div class="col-md-3">
+					<div class="logo-card light">
+						<div class="logo-content">
+							<div class="penguin-icon">🐧</div>
+							<div class="penguin">
+								PENGUIN<br>LOOKS
+							</div>
+						</div>
+						<div class="hover-text">
+							<div class="hover-heading">Penguin Looks</div>
+							<div class="hover-description">A fashion-based reality series that combines visual flair
+								with celebrity storytelling.</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section testimony-section" style="background-color: #f9e9e67e; color: black;">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section heading-section-black text-center ftco-animate">
+					<span class="subheading">Testimonies</span>
+					<h2 class="mb-4">What client says about Pallav Kaishorya?</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+				</div>
+			</div>
+			<div class="row ftco-animate">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel">
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">Pallav Kaishorya's work has been transformative in the digital
+										space. His creativity and attention to detail are unmatched.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Rajesh Kumar</p>
+											<span class="position">Creative Director</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">Working with Pallav Kaishorya has been an incredible
+										experience. He brings an unmatched level of expertise and passion to every
+										project.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Priya Sharma</p>
+											<span class="position">Producer</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">Pallav Kaishorya has an eye for detail and his ability to bring
+										innovative ideas to the table is truly remarkable.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Anshu Singh</p>
+											<span class="position">Marketing Executive</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">Every project that Pallav Kaishorya touches turns into
+										something exceptional. His dedication and innovation are truly inspiring.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Amit Kumar</p>
+											<span class="position">Director of Photography</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">Working with Pallav Kaishorya was a great experience. He knows
+										how to execute projects with perfection and an exceptional eye for quality.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Meena Verma</p>
+											<span class="position">Production Manager</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section bg-light" id="blog-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<span class="subheading">Blog</span>
+					<h2 class="mb-4">Our Blog</h2>
+					<p>Explore the latest insights, projects, and innovations in the world of media, entertainment, and
+						creative storytelling.</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="#" class="block-20"
+							style="background-image: url('https://picsum.photos/id/1011/400/300');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+								<p class="mb-0">
+									<span class="mr-2">April 30, 2025</span>
+									<a href="#" class="mr-2">Pallav Kaishorya</a>
+									<a href="#" class="meta-chat"><span class="icon-chat"></span> 5</a>
+								</p>
+							</div>
+							<h3 class="heading"><a href="#">The Evolution of Storytelling in Digital Media</a>
+							</h3>
+							<p>A deep dive into how digital media platforms have reshaped the way we consume stories and
+								engage with content.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="#" class="block-20"
+							style="background-image: url('data:image/jpeg;base64,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');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+								<p class="mb-0">
+									<span class="mr-2">April 25, 2025</span>
+									<a href="#" class="mr-2">Pallav Kaishorya</a>
+									<a href="#" class="meta-chat"><span class="icon-chat"></span> 4</a>
+								</p>
+							</div>
+							<h3 class="heading"><a href="#">How OTT Platforms are Shaping the Future of
+									Cinema</a></h3>
+							<p>The rapid rise of OTT platforms has revolutionized how we watch and experience cinema.
+								Let’s explore the trends shaping this transformation.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="#" class="block-20"
+							style="background-image: url('data:image/jpeg;base64,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');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+								<p class="mb-0">
+									<span class="mr-2">April 15, 2025</span>
+									<a href="#" class="mr-2">Pallav Kaishorya</a>
+									<a href="#" class="meta-chat"><span class="icon-chat"></span> 7</a>
+								</p>
+							</div>
+							<h3 class="heading"><a href="#">The Future of Reality Shows: Digital
+									Disruption</a></h3>
+							<p>How reality television is evolving in the digital age and the role of platforms like
+								YouTube and Instagram in redefining audience engagement.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section  py-5" id="video-gallery-section"style="background-color: #f9e9e67e;"">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 text-center">
+					<span class="subheading" style="color: #b1b493;">Video Gallery</span>
+					<h2 class="mb-4">Our Featured Videos</h2>
+					<p>Explore visual stories in media, entertainment, and digital innovation.</p>
+				</div>
+			</div>
+
+			<div class="row align-items-center">
+				<!-- Video Carousel -->
+				<div class="col-md-6">
+					<div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="ratio ratio-16x9">
+									<iframe src="https://www.youtube.com/embed/ovK4Ik3HIJI" title="Video 1"
+										allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="ratio ratio-16x9">
+									<iframe src="https://www.youtube.com/embed/CreV6jfhRyM" title="Video 2"
+										allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="ratio ratio-16x9">
+									<iframe src="https://www.youtube.com/embed/ovK4Ik3HIJI" title="Video 3"
+										allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#videoCarousel"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+					</div>
+				</div>
+
+				<!-- Text Description -->
+				<div class="col-md-6">
+					<div class="video-description">
+						<div class="desc-item" id="desc1">
+							<h3>The Evolution of Storytelling in Digital Media</h3>
+							<p>A deep dive into how digital media platforms have reshaped the way we consume stories and
+								engage with content.</p>
+						</div>
+						<div class="desc-item d-none" id="desc2">
+							<h3>How OTT Platforms are Shaping the Future of Cinema</h3>
+							<p>The rapid rise of OTT platforms has revolutionized how we watch and experience cinema.
+								Let’s explore the trends shaping this transformation.</p>
+						</div>
+						<div class="desc-item d-none" id="desc3">
+							<h3>The Future of Reality Shows: Digital Disruption</h3>
+							<p>How reality television is evolving in the digital age and the role of platforms like
+								YouTube and Instagram in redefining audience engagement.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Bootstrap 5 JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const carousel = document.getElementById('videoCarousel');
+			carousel.addEventListener('slide.bs.carousel', function (e) {
+				const descItems = document.querySelectorAll('.desc-item');
+				descItems.forEach(item => item.classList.add('d-none'));
+				const activeDesc = document.getElementById('desc' + (e.to + 1));
+				if (activeDesc) activeDesc.classList.remove('d-none');
+			});
+		});
+	</script>
+
+
+
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Lightbox2 CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+
+
+
+	<section class="portfolio py-5" id="gallerysec">
+		<div class="container">
+			<div class="section-head text-center mb-5">
+				<h4>Image Gallery</h4>
+			</div>
+
+			<div class="row g-4" id="imageGallery">
+				<!-- Gallery Items (First 4 visible) -->
+				<div class="col-md-3 col-sm-6">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/2.jpg" alt="Image 1">
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/11.jpg" alt="Image 2">
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/1.JPG" alt="Image 3">
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<a href="" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/5.JPG" alt="Image 4">
+						</div>
+					</a>
+				</div>
+
+				<!-- Hidden Items -->
+				<div class="col-md-3 col-sm-6 ">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/1.JPG" alt="Image 5">
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 ">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/2.JPG" alt="Image 6">
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 ">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/3.JPG" alt="Image 7">
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 ">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/4.JPG" alt="Image 8">
+						</div>
+					</a>
+				</div>
+
+
+				<div class="col-md-3 col-sm-6 more-image">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/10.jpg" alt="Image 1">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 more-image">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/12.jpg" alt="Image 1">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 more-image">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/13.jpg" alt="Image 1">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 more-image">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/15.jpg" alt="Image 1">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 more-image">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/6.jpg" alt="Image 1">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 more-image">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/7.jpg" alt="Image 1">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 more-image">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/9.jpg" alt="Image 1">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 more-image">
+					<a href="#" data-lightbox="gallery">
+						<div class="img-wrapper">
+							<img src="images/3.jpg" alt="Image 1">
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<!-- View More Button -->
+			<div class="text-center mt-4">
+				<button id="viewMoreBtn" class="btn btn-primary">View More</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Lightbox2 JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+	<!-- Show More Script -->
+	<script>
+		document.getElementById("viewMoreBtn").addEventListener("click", function () {
+			document.querySelectorAll(".more-image").forEach(el => el.style.display = "block");
+			this.style.display = "none";
+		});
+	</script>
+
+
+
+
+
+
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<span class="subheading">Contact us</span>
+					<h2 class="mb-4">Have a Project?</h2>
+					<p>We’d love to hear from you! Whether you have a question or want to start a new project, we’re
+						here to help!</p>
+				</div>
+			</div>
+
+			<div class="row block-9">
+				<div class="col-md-8">
+					<form action="#" class="bg-light p-4 p-md-5 contact-form">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Your Name">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Your Email">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Subject">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<textarea name="" id="" cols="30" rows="7" class="form-control"
+										placeholder="Message"></textarea>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-md-4 d-flex pl-md-5">
+					<div class="row">
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-map-marker"></span>
+							</div>
+							<div class="text">
+								<p><span>Address:</span> 123 Creative Avenue, Suite 405, Los Angeles, CA 90017</p>
+							</div>
+						</div>
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="text">
+								<p><span>Phone:</span> <a href="tel://9876543210">+ 987 654 3210</a></p>
+							</div>
+						</div>
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-paper-plane"></span>
+							</div>
+							<div class="text">
+								<p><span>Email:</span> <a
+										href="mailto:contact@creativeagency.com">contact@creativeagency.com</a></p>
+							</div>
+						</div>
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-globe"></span>
+							</div>
+							<div class="text">
+								<p><span>Website:</span> <a href="https://www.creativeagency.com"
+										target="_blank">creativeagency.com</a></p>
+							</div>
+						</div>
+					</div>
+					<!-- <div id="map" class="map"></div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Let's Talk Stories</h2>
+						<p>Unfolding narratives that inspire, entertain, and transform. Join the journey into the heart of digital storytelling with Pallav Kaishorya.</p>
+						<p><a href="#" class="btn btn-primary">Read Our Blogs</a></p>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h2 class="ftco-heading-2">Quick Links</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Portfolio</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Creative Services</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Script Writing</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Production Management</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Content Strategy</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Visual Storytelling</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Digital Media Consulting</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Contact Me</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="icon fa fa-map-marker"></span><span class="text">Lucknow, Uttar Pradesh, India</span></li>
+								<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+91 98765 43210</span></a></li>
+								<li><a href="#"><span class="icon fa fa-envelope pr-4"></span><span class="text">pallavkaishorya@gmail.com</span></a></li>
+							</ul>
+						</div>
+						<ul class="ftco-footer-social list-unstyled mt-2">
+							<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="fa fa-linkedin"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>
+						&copy; <script>document.write(new Date().getFullYear());</script> Pallav Kaishorya. All rights reserved. Built with <i class="fa fa-heart" aria-hidden="true"></i> for storytellers and creatives.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+	<script src="js/google-map.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>
